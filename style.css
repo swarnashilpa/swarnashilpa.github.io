@@ -15,8 +15,12 @@ max-width: 1200px;
 margin: auto;
 }
 
-ul {
-  list-style:  none;
+ul.details-list {
+  list-style:  square;
+  padding: 0.5em 1em;
+}
+ul.details-list > li {
+  padding: 0.2em 0;
 }
 
 #container {
@@ -44,7 +48,7 @@ background-color: #000000;
 color: #ffffff;
 position: fixed;
 width: 100%;
-line-height: 1.5;
+line-height: 2;
 left: 0;
 right: 0;
 z-index: 2;
@@ -60,30 +64,22 @@ line-height: 1.5em;
 .content {
   padding: 1em;
 }
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0.2em;
+}
+
+.flex-box > span {
+  padding: 0.2em 0;
+}
+
+.info-label {
+  font-weight: 600;
+}
 
 #address {
   margin: 1em;
-}
-
-#line{
-border-style: solid;
-}
-/*
-#object{
-border-width:100%;
-border-style:none;
-background-color: lightgray;
-}
-
-#education{
-border-width: 100%;
-border-style:none;
-background-color: lightgray;
-}*/
-
-#header{
-text-transform: uppercase;
-
 }
 
 .education-details {
@@ -92,15 +88,11 @@ text-transform: uppercase;
   padding: 5px;
 }
 
-table{
-  display: none;
-border-collapse: collapse;
-width:100%;
-}
-td,th{
-  border: 1px solid ;
-text-align: center;
-padding: 8px;
+footer {
+  line-height: 5em;
+  background-color:#000000;
+  text-align: center;
+  color: #ffffff;
 }
 
 
